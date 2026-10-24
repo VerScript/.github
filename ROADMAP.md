@@ -10,7 +10,7 @@ This document outlines the strategic priorities, release targets, and architectu
 timeline
     title VerScript Roadmap Progression
     2026 Q3 : v1.0 Desktop & Web IDE : 34-Chapter Academy : InstantVM Engine
-    2026 Q4 (Current) : v2.0.0 Language Foundation : Win32 Dynamic FFI ('extern') : Stride Loops ('step') : In-App Help & 113-topic Knowledge Base : Windows Registry & .h.vrs Support
+    2026 Q4 (Current) : v2.0.0 Language Foundation : 151 Keywords & 247 Help Topics : 74-Chapter Academy : Win32 Dynamic FFI ('extern') : Stride Loops ('step') : 2D/3D & Terminal Primitives : Complex Numbers : Interactive Project Kanban
     2026 Q4 / 2027 Q1 : v2.1.0 Concurrency & Package Manager : Channel 'select' syntax : 'vrspm' Package CLI : WebSocket Client : Desktop Studio Git & Debugger
     2027 Q2 : v2.2.0 Native Compilation : Bytecode JIT execution : LLVM IR Backend Prototype : Cross-platform Linux/macOS Builds
 ```
@@ -21,14 +21,19 @@ timeline
 
 ### Phase 1: v2.0.0 — Universal Language Foundation (Status: Shipped ✅)
 - [x] **Core Language**: Complete standard library (21 modules), custom error handlers with suppression tiers, matrix-vector mathematics, pipeline `|>` operator.
-- [x] **Language Features**:
+- [x] **Language Features & Comprehensive Keyword Coverage (151 Keywords)**:
   - `step` keyword for loop strides: `for i in 0 .. 10 step 2:`
   - `extern` keyword for dynamic Win32 FFI: `extern "kernel32.dll" GetCurrentProcessId()`
+  - Terminal Subsystem: `terminal`, `flush`, `focus`, `title`, `split`
+  - Complex Numbers: `complex`, `real`, `imag`, `conj`, `hypot`, `lerp`, `clamp`
+  - 2D/3D Graphics Primitives: `screen`, `world`, `render`, `draw`, `spawn`, `camera`, `light`, `scene`
 - [x] **Binary Self-Updater**: Built-in `verscript update` command checking GitHub releases.
 - [x] **Universal File System**: First-class support for `*.vrs` (scripts), `*.lib.vrs` (modules), and `*.h.vrs` (headers).
 - [x] **Windows Registry**: Auto-registration script for file icons and context menu execution.
 - [x] **Brand Redesign**: New authentic overlapping ribbon logo across all platforms.
-- [x] **Documentation & Help**: Dedicated `VerScript/help` repository and live Help Center at `verscript.github.io/help`.
+- [x] **Documentation & Help**: Dedicated `VerScript/help` repository and live Help Center at `verscript.github.io/help` (247 topics covering all 151 keywords).
+- [x] **Documentation Academy**: 74 interactive chapters covering all fundamentals through native graphics and Win32 FFI at `verscript.github.io/docs`.
+- [x] **Interactive Project Kanban**: Live roadmap tracking 31 issues and 10 milestones at `verscript.github.io/project`.
 
 ---
 
